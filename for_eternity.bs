@@ -1,0 +1,45 @@
+<pre class='metadata'>
+Title: Fix Temporary Lifetimes in Range-for Initializer
+Status: D
+Audience: EWG
+Editor: Gašper Ažman <gasper.azman@gmail.com>
+Editor: Ben Deane <ben@elbeno.com>
+Shortname: DXXXX
+Abstract: We propose extending the lifetime of all temporaries created in the ranged-for initializer expression until the end of the for-loop's scope, to avoid the dangling view problem.
+Group: WG21
+Date: 2019-05-10
+Markup Shorthands: markdown yes
+Revision: 0
+ED: https://github.com/atomgalaxy/isocpp_for_eternity/for_eternity.html
+</pre>
+
+<style>
+.ins, ins, ins *, span.ins, span.ins * {
+  background-color: rgb(200, 250, 200);
+  color: rgb(0, 136, 0);
+  text-decoration: none;
+}
+
+.del, del, del *, span.del, span.del * {
+  background-color: rgb(250, 200, 200);
+  color: rgb(255, 0, 0);
+  text-decoration: line-through;
+  text-decoration-color: rgb(255, 0, 0);
+}
+
+ul .std {
+  list-style-type: none;
+  padding-left: 0px;
+}
+</style>
+
+Revision History {#history}
+===========================
+
+R0: Initial version.
+
+
+
+<!--
+vim: ft=markdown wrap linebreak nolist textwidth=0 wrapmargin=0
+-->
